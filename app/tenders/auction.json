@@ -1,0 +1,457 @@
+[
+  {
+    "sr_no": 1,
+    "material": "I03010002944",
+    "description": "POWER LOAD LOWERING SHAFT ASSY M/001/238",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 2,
+    "material": "I03010002945",
+    "description": "SPROCKET FOR POWER LOAD LWRING M/001/239",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 3,
+    "material": "I03010002946",
+    "description": "CHAIN TIGHTENER ASSEMBLY M/001/240",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 4,
+    "material": "I03010002947",
+    "description": "CHAIN FOR POWER LOAD LOWERING M/001/241",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 5,
+    "material": "I03010002948",
+    "description": "CHECK BAND MPOWER LOAD LWRING M/001/257",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 6,
+    "material": "I03010002949",
+    "description": "BRAKE ASSY FOR POWER LOWERING M/001/259",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 7,
+    "material": "I03010002950",
+    "description": "AIR PIPE FOR POWER LOWERING M/001/245A",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 8,
+    "material": "I03010002951",
+    "description": "DRUM FOR CRN 276CF124XPAI",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 9,
+    "material": "I03010002952",
+    "description": "BOOM HOIST BRIDDLE ASSEMBLY 200G46X",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 10,
+    "material": "I03010002953",
+    "description": "HOOK SUPP BLOCK &HOOK M/001/284 & M/271",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 11,
+    "material": "I03010002954",
+    "description": "BOOM SAFETY STOP 254G31X",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 12,
+    "material": "I03010002956",
+    "description": "PENDANT 32MM X 23FT 157G224–15/M/001/309",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 13,
+    "material": "I03010002957",
+    "description": "PENDANT 32MM X 10FT 157G170–15/M/001/308",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 14,
+    "material": "I03010002958",
+    "description": "BOOM FITTING 12G175G",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 15,
+    "material": "I03010002959",
+    "description": "BUSH 145 B 33",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 16,
+    "material": "I03010002960",
+    "description": "SHAFT 90 F 123",
+    "bun": "EA",
+    "stock": 4
+  },
+  {
+    "sr_no": 17,
+    "material": "I03010002961",
+    "description": "ROTARY AIR SEAL 315 G 13X",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 18,
+    "material": "I07060000033",
+    "description": "TMT BAR 36MM TO 37.4",
+    "bun": "",
+    "stock": null
+  },
+  {
+    "sr_no": 19,
+    "material": "I62040000247",
+    "description": "HDG Bolt & Nut D16 X 60 MM H/T Gr 5.6",
+    "bun": "SET",
+    "stock": 2331.99
+  },
+  {
+    "sr_no": 20,
+    "material": "I62040000256",
+    "description": "HDG Bolt & Nut D24 X 60 MM H/T Gr 5.6",
+    "bun": "SET",
+    "stock": 534.995
+  },
+  {
+    "sr_no": 21,
+    "material": "I62040000257",
+    "description": "HDG Bolt & Nut D24 X 70 MM H/T Gr 5.6",
+    "bun": "SET",
+    "stock": 1469.77
+  },
+  {
+    "sr_no": 22,
+    "material": "I62040000262",
+    "description": "HDG Step Bolt Hd 40 - 16 X 175 MM TL 50",
+    "bun": "SET",
+    "stock": 747.406
+  },
+  {
+    "sr_no": 23,
+    "material": "I06040000075",
+    "description": "JOINT KIT M SEAL COMP1.1KV 3.5CX70SQ.MM",
+    "bun": "SET",
+    "stock": 6
+  },
+  {
+    "sr_no": 24,
+    "material": "I06040000099",
+    "description": "ST. THRO. JOINT KIT FOR 1.1KV 3.5X35SQMM",
+    "bun": "EA",
+    "stock": 17
+  },
+  {
+    "sr_no": 25,
+    "material": "I06090000005",
+    "description": "CABLE JOINTING KIT, SIZE: 3C x 95mm² (33 KV)",
+    "bun": "EA",
+    "stock": 1
+  },
+  {
+    "sr_no": 26,
+    "material": "I62160000101",
+    "description": "HDG Sp. Washer D24 X T5 MM",
+    "bun": "KG",
+    "stock": 115.594
+  },
+  {
+    "sr_no": 27,
+    "material": "",
+    "description": "Outdoor type Vacuum Circuit Breaker (VCB)",
+    "bun": "SET",
+    "stock": 3
+  },
+  {
+    "sr_no": 28,
+    "material": "",
+    "description": "Polycrete outdoor current Transformer",
+    "bun": "EA",
+    "stock": 9
+  },
+  {
+    "sr_no": 29,
+    "material": "",
+    "description": "Dry type Inductive voltage Transformer",
+    "bun": "EA",
+    "stock": 6
+  },
+  {
+    "sr_no": 30,
+    "material": "",
+    "description": "Oil filled Transformer",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 31,
+    "material": "",
+    "description": "Oil filled Transformer",
+    "bun": "EA",
+    "stock": 1
+  },
+  {
+    "sr_no": 32,
+    "material": "",
+    "description": "33Kv Indoor VCB switch board",
+    "bun": "EA",
+    "stock": 1
+  },
+  {
+    "sr_no": 33,
+    "material": "",
+    "description": "Feeder",
+    "bun": "EA",
+    "stock": 12
+  },
+  {
+    "sr_no": 34,
+    "material": "",
+    "description": "Breaker with B/C",
+    "bun": "EA",
+    "stock": 5
+  },
+  {
+    "sr_no": 35,
+    "material": "",
+    "description": "PDB panel",
+    "bun": "EA",
+    "stock": 1
+  },
+  {
+    "sr_no": 36,
+    "material": "",
+    "description": "33 Kv control Panel",
+    "bun": "EA",
+    "stock": 1
+  },
+  {
+    "sr_no": 37,
+    "material": "",
+    "description": "Capacitor panel",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 38,
+    "material": "",
+    "description": "Bus post Insulator",
+    "bun": "SET",
+    "stock": 45
+  },
+  {
+    "sr_no": 39,
+    "material": "",
+    "description": "Base plate for CT / PT structure",
+    "bun": "EA",
+    "stock": 15
+  },
+  {
+    "sr_no": 40,
+    "material": "",
+    "description": "Surge counter",
+    "bun": "EA",
+    "stock": 3
+  },
+  {
+    "sr_no": 41,
+    "material": "",
+    "description": "Lightning Arrester",
+    "bun": "SET",
+    "stock": 3
+  },
+  {
+    "sr_no": 42,
+    "material": "",
+    "description": "Isolator support Insulator",
+    "bun": "SET",
+    "stock": 18
+  },
+  {
+    "sr_no": 43,
+    "material": "",
+    "description": "Junction Box for CT",
+    "bun": "EA",
+    "stock": 9
+  },
+  {
+    "sr_no": 44,
+    "material": "",
+    "description": "Junction Box for PT",
+    "bun": "EA",
+    "stock": 6
+  },
+  {
+    "sr_no": 45,
+    "material": "",
+    "description": "Junction Box for Isolator",
+    "bun": "EA",
+    "stock": 3
+  },
+  {
+    "sr_no": 46,
+    "material": "",
+    "description": "Structure for VCB",
+    "bun": "SET",
+    "stock": 3
+  },
+  {
+    "sr_no": 47,
+    "material": "",
+    "description": "Structure for CT",
+    "bun": "SET",
+    "stock": 3
+  },
+  {
+    "sr_no": 48,
+    "material": "",
+    "description": "Structure for PT",
+    "bun": "SET",
+    "stock": 2
+  },
+  {
+    "sr_no": 49,
+    "material": "",
+    "description": "Bus Tube",
+    "bun": "LOT",
+    "stock": 1
+  },
+  {
+    "sr_no": 50,
+    "material": "",
+    "description": "Waste transformer oil",
+    "bun": "DRUM",
+    "stock": 7
+  },
+  {
+    "sr_no": 51,
+    "material": "",
+    "description": "Lighting pole",
+    "bun": "EA",
+    "stock": 150
+  },
+  {
+    "sr_no": 52,
+    "material": "",
+    "description": "Armour wire",
+    "bun": "KGS",
+    "stock": 200
+  },
+  {
+    "sr_no": 53,
+    "material": "",
+    "description": "Bus duct",
+    "bun": "KGS",
+    "stock": 1000
+  },
+  {
+    "sr_no": 54,
+    "material": "",
+    "description": "Panel board",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 55,
+    "material": "",
+    "description": "Burn Bushing",
+    "bun": "EA",
+    "stock": 2
+  },
+  {
+    "sr_no": 56,
+    "material": "",
+    "description": "GI earth wire",
+    "bun": "KGS",
+    "stock": 50
+  },
+  {
+    "sr_no": 57,
+    "material": "",
+    "description": "Disc insulator",
+    "bun": "EA",
+    "stock": 50
+  },
+  {
+    "sr_no": 58,
+    "material": "",
+    "description": "GI conduit",
+    "bun": "EA",
+    "stock": 1000
+  },
+  {
+    "sr_no": 59,
+    "material": "",
+    "description": "Earthing strips",
+    "bun": "KGS",
+    "stock": 500
+  },
+  {
+    "sr_no": 60,
+    "material": "",
+    "description": "PVC pipe",
+    "bun": "EA",
+    "stock": 200
+  },
+  {
+    "sr_no": 61,
+    "material": "",
+    "description": "Nut & bolts",
+    "bun": "KGS",
+    "stock": 1000
+  },
+  {
+    "sr_no": 62,
+    "material": "",
+    "description": "33 kV ,3cx95 Sqmm HT cable",
+    "bun": "M",
+    "stock": 2670
+  },
+  {
+    "sr_no": 63,
+    "material": "",
+    "description": "33 kV,3cx300 sqmm HT cable",
+    "bun": "M",
+    "stock": 600
+  },
+  {
+    "sr_no": 64,
+    "material": "",
+    "description": "11kV,3cx185 sqmm HT cable",
+    "bun": "M",
+    "stock": 340
+  },
+  {
+    "sr_no": 65,
+    "material": "",
+    "description": "11 kV,3cx300 sqmm HT cable",
+    "bun": "M",
+    "stock": 1120
+  }
+]
