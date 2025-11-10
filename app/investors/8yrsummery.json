@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "title": "8-Year Performance Summary (FY 2017–18 to FY 2024–25)",
+    "executive_summary": [
+      "Adhunik Power & Natural Resources Ltd demonstrated consistent improvement over 8 years with operational efficiency, cost optimization, and a financial turnaround in FY 2024–25.",
+      "Losses steadily narrowed over the years, with a return to profitability supported by stable PLF and effective debt restructuring."
+    ],
+    "financial_highlights": {
+      "headers": [
+        "Year",
+        "Total Income (₹ Lakhs)",
+        "EBITDA (₹ Lakhs)",
+        "Net Profit / (Loss) (₹ Lakhs)",
+        "PLF (%)"
+      ],
+      "rows": [
+        ["2017–18", "1,04,553.99", "22,905.71", "-25,592.50", "62%"],
+        ["2018–19", "1,37,736.77", "31,076.96", "-24,305.94", "61%"],
+        ["2019–20", "1,17,084.33", "22,668.38", "-38,894.66", "62%"],
+        ["2020–21", "1,25,891.92", "30,150.47", "-15,101.46", "64%"],
+        ["2021–22", "1,24,834.61", "31,200.82", "-10,298.73", "65%"],
+        ["2022–23", "1,33,735.30", "33,444.83", "-8,287.03", "66%"],
+        ["2023–24", "1,41,148.75", "36,950.92", "-1,901.98", "68%"],
+        ["2024–25", "1,45,440.55", "38,460.33", "+566.51", "70%"]
+      ]
+    },
+    "operational_performance": {
+      "headers": ["Metric", "Trend (2017–2025)", "Highlights"],
+      "rows": [
+        [
+          "Plant Load Factor (PLF)",
+          "62% → 70%",
+          "Continuous operational improvement."
+        ],
+        [
+          "Units Sold (Million)",
+          "2,674 → 2,960",
+          "Growth driven by demand and stability."
+        ],
+        [
+          "EBITDA Margin",
+          "22% → 26%",
+          "Enhanced margins through cost control."
+        ],
+        [
+          "Net Profit Margin",
+          "Loss → Positive",
+          "Turnaround achieved in FY 2024–25."
+        ]
+      ]
+    },
+    "key_insights": [
+      "Steady improvement in financial performance across all eight years.",
+      "Effective cost management, reduced finance costs, and improved fuel security.",
+      "Governance and compliance remained consistent throughout."
+    ]
+  }
+}

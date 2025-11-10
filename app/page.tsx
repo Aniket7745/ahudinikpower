@@ -1,5 +1,4 @@
 "use client";
-import { Leaf, Home, FileText, Phone } from "lucide-react";
 import HeroSection from "./componets/HeroSection.tsx";
 import BlogScetion from "./componets/BlogSection.tsx";
 import MagazineSection from "./componets/MagazineSection.tsx";
