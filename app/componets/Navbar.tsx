@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
@@ -21,7 +22,6 @@ const LINKS = [
   { href: "/tenders", label: "Tenders" },
   { href: "/corporate", label: "Corporate Information" },
   { href: "/environment", label: "Environment" },
-  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Navbar() {
@@ -31,62 +31,88 @@ export default function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white shadow-sm">
-      <nav className="flex items-center justify-between px-6 lg:px-8 py-4">
-        {/* Branding */}
-        <Link href="/" className="text-2xl font-extrabold text-blue-700">
-          AdhunikPower
+    <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur-md shadow-sm transition-all duration-200">
+      <nav className="flex items-center justify-between px-6 lg:px-10 py-3">
+        {/* Left: Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <Image
+            src="/adhuniklogo.png"
+            alt="Adhunik Power Logo"
+            width={45}
+            height={45}
+            className="transition-transform duration-300 group-hover:scale-105"
+          />
         </Link>
 
-        {/* Desktop Navigation */}
-        <NavigationMenu className="hidden md:flex mx-auto">
-          <NavigationMenuList className="flex gap-6">
-            {LINKS.map((link) => (
-              <NavigationMenuItem key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`px-3 py-2 text-sm ${
-                    isActive(link.href)
-                      ? "text-blue-700 font-semibold"
-                      : "text-gray-600 hover:text-blue-600"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+        {/* Center: Navigation Menu */}
+        <div className="hidden md:flex flex-1 justify-center">
+          <NavigationMenu>
+            <NavigationMenuList className="flex gap-6">
+              {LINKS.map((link) => (
+                <NavigationMenuItem key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                      isActive(link.href)
+                        ? "text-blue-700 font-semibold border-b-2 border-blue-700"
+                        : "text-gray-600 hover:text-blue-600 hover:border-b-2 hover:border-blue-200"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
 
-        {/* Removed Contact Button */}
-        <div className="hidden md:block"></div>
+        {/* Right: Contact Us Button */}
+        <div className="hidden md:block">
+          <Link href="/contact">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-sm px-5">
+              Contact Us
+            </Button>
+          </Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <Button
           variant="ghost"
-          className="md:hidden"
+          className="md:hidden text-gray-700 hover:text-blue-700 transition"
           onClick={() => setMobileOpen((prev) => !prev)}
         >
-          {isMobileOpen ? <X /> : <Menu />}
+          {isMobileOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </Button>
       </nav>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Dropdown */}
       {isMobileOpen && (
-        <div className="md:hidden border-t bg-white px-4 py-3 space-y-2">
+        <div className="md:hidden border-t bg-white/95 backdrop-blur-sm px-5 py-4 space-y-2 shadow-sm">
           {LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`block py-2 text-sm ${
+              onClick={() => setMobileOpen(false)}
+              className={`block py-2 text-sm transition-colors duration-150 ${
                 isActive(link.href)
                   ? "text-blue-700 font-semibold"
-                  : "text-gray-600 hover:text-blue-600"
+                  : "text-gray-700 hover:text-blue-600"
               }`}
             >
               {link.label}
             </Link>
           ))}
+
+          {/* Mobile Contact Button */}
+          <Link href="/contact">
+            <Button className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white font-medium">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       )}
     </header>
