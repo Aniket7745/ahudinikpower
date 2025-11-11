@@ -2,12 +2,42 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const sections = [
   { id: "press", title: "Press Releases" },
   { id: "interviews", title: "Interviews & Articles" },
   { id: "gallery", title: "Gallery" },
   { id: "notice", title: "Notices" },
+];
+
+const galleryImages = [
+  "24.jpg",
+  "8.jpg",
+  "9.jpg",
+  "a1.jpg",
+  "a2.jpg",
+  "a3.jpg",
+  "a4.jpg",
+  "a5.jpg",
+  "a6.jpg",
+  "a7.jpg",
+  "a9.jpg",
+  "a11.jpg",
+  "a12.jpg",
+  "a13.jpg",
+  "a14.jpg",
+  "a15.jpg",
+  "a16.jpg",
+  "certificate.jpg",
+  "mpl5_runnerup.jpg",
+  "mpl5_winner.jpg",
+  "mpl 2023 winner.jpg",
+  "mpl 2023 runner-up.jpg",
+  "safety-day 2023.jpg",
+  "women emp1.jpg",
+  "women emp2.jpg",
 ];
 
 export default function MediaPage() {
@@ -60,7 +90,7 @@ export default function MediaPage() {
               </p>
             </div>
 
-            {/* Press Release Articles */}
+            {/* Example Press Articles */}
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
@@ -89,8 +119,8 @@ export default function MediaPage() {
               ))}
             </div>
 
-            {/* Notion-style Divider */}
-            <div className="flex items-center gap-3">
+            {/* Divider */}
+            <div className="flex items-center gap-3 mt-10">
               <div className="flex-grow h-px bg-gray-200"></div>
               <span className="text-sm text-gray-400 uppercase tracking-wide">
                 Gallery
@@ -98,43 +128,35 @@ export default function MediaPage() {
               <div className="flex-grow h-px bg-gray-200"></div>
             </div>
 
-            {/* Masonry Image Gallery */}
-            <div className="columns-2 md:columns-3 gap-4 space-y-4">
-              {[
-                "0.jpg",
-                "4.jpg",
-                "5.jpg",
-                "5-star-rating1.jpg",
-                "5-star-rating2.jpg",
-                "5-star-rating3.jpg",
-                "6.jpg",
-                "7.jpg",
-                "boiler inspector.jpg",
-              ].map((img, index) => (
-                <div
-                  key={index}
-                  className="relative w-full overflow-hidden rounded-xl border border-gray-200 hover:shadow-md transition group"
-                >
-                  <Image
-                    src={`/Adhunik_IMG/${img}`}
-                    alt={img}
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
+            {/* Mini Gallery Preview */}
+            <PhotoProvider>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {galleryImages.slice(0, 9).map((img, index) => (
+                  <PhotoView key={index} src={`/gallery/${img}`}>
+                    <div className="relative group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition cursor-pointer aspect-[4/3]">
+                      <Image
+                        src={`/gallery/${img}`}
+                        alt={img}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
+                  </PhotoView>
+                ))}
+              </div>
+            </PhotoProvider>
           </div>
         )}
-        {/* INTERVIEWS & ARTICLES */}
+
+        {/* INTERVIEWS */}
         {active === "interviews" && (
           <div className="space-y-6 text-[15px]">
             <p>
               Read the latest interviews and featured articles with our
               leadership team and industry experts.
             </p>
-
             <div className="space-y-4 mt-4">
               <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                 <h3 className="text-lg font-semibold text-blue-700">
@@ -172,17 +194,24 @@ export default function MediaPage() {
               Explore moments from our events, plant operations, and CSR
               initiatives.
             </p>
-
-            <div className="grid grid-cols-3 gap-4 mt-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
-                  key={i}
-                  className="h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 hover:bg-gray-300 transition"
-                >
-                  Image {i}
-                </div>
-              ))}
-            </div>
+            <PhotoProvider>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+                {galleryImages.map((img, i) => (
+                  <PhotoView key={i} src={`/gallery/${img}`}>
+                    <div className="relative group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition cursor-pointer aspect-[4/3]">
+                      <Image
+                        src={`/gallery/${img}`}
+                        alt={img}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
+                  </PhotoView>
+                ))}
+              </div>
+            </PhotoProvider>
           </div>
         )}
 
@@ -193,7 +222,6 @@ export default function MediaPage() {
               Find official company notices, updates, and circulars from{" "}
               <b>Adhunik Power & Natural Resources Ltd. (APNRL)</b>.
             </p>
-
             <ul className="list-disc ml-6 space-y-2">
               <li>
                 <b>Feb 2025:</b> Notice regarding Annual General Meeting.
