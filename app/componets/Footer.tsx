@@ -1,145 +1,151 @@
-import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
+"use client";
+
+import {
+  Mail,
+  Phone,
+  ArrowUp,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B2239] text-gray-300 pt-16 pb-6">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-        {/* ==== Logo + Tagline ==== */}
+    <footer className="bg-[#0A0F1C] text-gray-400 border-t border-gray-800">
+      {/* === Top Section === */}
+      <div className="max-w-[1600px] mx-auto px-10 xl:px-24 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* === Logo + Tagline === */}
         <div>
           <img
-            src="/adhunik-logo.png"
+            src="/adhuniklogo.png"
             alt="Adhunik Power Logo"
-            className="w-36 mb-4"
+            className="w-32 mb-3 opacity-90 hover:opacity-100 transition"
           />
-          <p className="text-sm leading-relaxed">
+          <p className="text-xs leading-relaxed text-gray-400 mb-3">
             Powering progress with reliable and sustainable energy.
           </p>
-
           <a
             href="#"
-            className="inline-block mt-4 text-blue-300 hover:text-white font-medium"
+            className="inline-block text-blue-400 hover:text-white text-xs font-medium"
           >
             Read More &raquo;
           </a>
-
-          <div className="flex gap-4 mt-6 text-xl">
-            <a href="#" className="hover:text-white">
-              T
-            </a>
-            <a href="#" className="hover:text-white">
-              in
-            </a>
-            <a href="#" className="hover:text-white">
-              F
-            </a>
-            <a href="#" className="hover:text-white">
-              S
-            </a>
-            <a href="#" className="hover:text-white">
-              P
-            </a>
-          </div>
         </div>
 
-        {/* ==== Quick Links ==== */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            {[
-              "About Us",
-              "CSR",
-              "Policies",
-              "Media",
-              "Investors",
-              "Tenders",
-              "Environment",
-            ].map((item) => (
-              <li key={item} className="hover:text-white cursor-pointer">
-                - {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* ==== Contact Info ==== */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">
+        {/* === Contact Info === */}
+        <div className="leading-relaxed">
+          <h3 className="text-sm font-semibold text-blue-400 mb-3 uppercase tracking-wide">
             Get in Touch
           </h3>
-
-          <div className="space-y-4 text-sm leading-relaxed">
+          <div className="space-y-3 text-xs">
             <div>
-              <p className="font-semibold text-white">Plant:</p>
+              <p className="font-semibold text-gray-200">Plant:</p>
               <p>
-                Adhunik Power & Natural Resources Ltd
-                <br />
-                Village: Padampur
-                <br />
-                Behind: P.G.C.I.L. Substation
-                <br />
+                Adhunik Power & Natural Resources Ltd <br />
+                Village: Padampur <br />
+                Behind: P.G.C.I.L. Substation <br />
                 Jharkhand - 832402
               </p>
               <p className="flex items-center gap-2 mt-1">
-                <Phone size={16} /> 0657-6628439
+                <Phone size={12} /> 0657-6628439
               </p>
             </div>
 
             <div>
-              <p className="font-semibold text-white">Regd. & Corp. Office:</p>
+              <p className="font-semibold text-gray-200">
+                Regd. & Corp. Office:
+              </p>
               <p>
                 Lansdowne Towers, 5th Floor, 2/1A, Sarat Bose Road, Kolkata –
                 700020
               </p>
               <p className="flex items-center gap-2 mt-1">
-                <Phone size={16} /> 033-66384700
+                <Phone size={12} /> 033-66384700
               </p>
             </div>
 
             <div>
-              <p className="font-semibold text-white">Gurgaon Office:</p>
+              <p className="font-semibold text-gray-200">Gurgaon Office:</p>
               <p>468 Udyog Vihar, 1st Floor, Phase 3, Gurgaon – 122016</p>
               <p className="flex items-center gap-2 mt-1">
-                <Phone size={16} /> 012-46054500
+                <Phone size={12} /> 012-46054500
               </p>
             </div>
 
             <p className="flex items-center gap-2 mt-1">
-              <Mail size={16} /> info@adhunikpower.co.in
+              <Mail size={12} /> info@adhunikpower.co.in
             </p>
           </div>
         </div>
 
-        {/* ==== Map ==== */}
+        {/* === Map Section === */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Locate Us</h3>
-          <div className="rounded-lg overflow-hidden shadow-lg border border-gray-700">
+          <h3 className="text-sm font-semibold text-blue-400 mb-3 uppercase tracking-wide">
+            Locate Us
+          </h3>
+          <div className="rounded-md overflow-hidden shadow-md border border-gray-700">
             <iframe
-              className="w-full h-56"
+              className="w-full h-36 grayscale hover:grayscale-0 transition"
               loading="lazy"
               allowFullScreen
               src="https://www.google.com/maps/embed?pb=!1m18..."
             ></iframe>
           </div>
         </div>
+
+        {/* === Social Links === */}
+        <div className="flex flex-col items-start md:items-end">
+          <h3 className="text-sm font-semibold text-blue-400 mb-3 uppercase tracking-wide">
+            Follow Us
+          </h3>
+          <div className="flex items-center gap-5 text-gray-400">
+            <a href="#" className="hover:text-blue-400 transition">
+              <Facebook size={16} />
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              <Instagram size={16} />
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              <Linkedin size={16} />
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              <Twitter size={16} />
+            </a>
+          </div>
+        </div>
       </div>
 
-      {/* ==== Bottom Bar ==== */}
-      <div className="mt-14 pt-4 border-t border-gray-700 text-center text-sm">
-        <p>Copyright © Adhunik Power. All rights reserved.</p>
-        <p className="mt-1">
-          Designed By:{" "}
-          <span className="text-blue-300 font-semibold">
-            Neha Srivastava (Information Technology)
-          </span>
+      {/* === Bottom Bar === */}
+      <div className="max-w-[1600px] mx-auto border-t border-gray-800 px-10 xl:px-24 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
+        <div className="flex flex-wrap gap-4 mb-2 md:mb-0 justify-center md:justify-start">
+          <a href="#" className="hover:text-blue-400 transition">
+            Home
+          </a>
+          <a href="#" className="hover:text-blue-400 transition">
+            About Us
+          </a>
+          <a href="#" className="hover:text-blue-400 transition">
+            Investors
+          </a>
+          <a href="#" className="hover:text-blue-400 transition">
+            Media
+          </a>
+          <a href="#" className="hover:text-blue-400 transition">
+            Contact
+          </a>
+        </div>
+        <p className="text-center md:text-right">
+          © {new Date().getFullYear()} Adhunik Power. All rights reserved.
         </p>
       </div>
 
-      {/* ==== Back to top button ==== */}
+      {/* === Back to Top Button === */}
       <a
         href="#top"
-        className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-xl transition"
+        className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-2.5 rounded-full shadow-md transition transform hover:-translate-y-1"
       >
-        <ArrowUp size={20} />
+        <ArrowUp size={18} />
       </a>
     </footer>
   );
